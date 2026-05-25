@@ -10,12 +10,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("TourDataOrchestrator.Api")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("TourDataOrchestrator.MockWorker")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ffec4472f22859362c5a8411467d78cf3b6dbfe1")]
-[assembly: System.Reflection.AssemblyProductAttribute("TourDataOrchestrator.Api")]
-[assembly: System.Reflection.AssemblyTitleAttribute("TourDataOrchestrator.Api")]
+[assembly: System.Reflection.AssemblyProductAttribute("TourDataOrchestrator.MockWorker")]
+[assembly: System.Reflection.AssemblyTitleAttribute("TourDataOrchestrator.MockWorker")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Wygenerowane przez klasę WriteCodeFragment programu MSBuild.

@@ -1,0 +1,12 @@
+C:\Users\fasol\Documents\Projekt Biznesowy\Orchestrator\Szlakomat-data-aggregation-hub\src\TourDataOrchestrator.Domain\bin\Debug\net8.0\TourDataOrchestrator.Domain.deps.json
+C:\Users\fasol\Documents\Projekt Biznesowy\Orchestrator\Szlakomat-data-aggregation-hub\src\TourDataOrchestrator.Domain\bin\Debug\net8.0\TourDataOrchestrator.Domain.dll
+C:\Users\fasol\Documents\Projekt Biznesowy\Orchestrator\Szlakomat-data-aggregation-hub\src\TourDataOrchestrator.Domain\bin\Debug\net8.0\TourDataOrchestrator.Domain.pdb
+C:\Users\fasol\Documents\Projekt Biznesowy\Orchestrator\Szlakomat-data-aggregation-hub\src\TourDataOrchestrator.Domain\obj\Debug\net8.0\TourDataOrchestrator.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fasol\Documents\Projekt Biznesowy\Orchestrator\Szlakomat-data-aggregation-hub\src\TourDataOrchestrator.Domain\obj\Debug\net8.0\TourDataOrchestrator.Domain.AssemblyInfoInputs.cache
+C:\Users\fasol\Documents\Projekt Biznesowy\Orchestrator\Szlakomat-data-aggregation-hub\src\TourDataOrchestrator.Domain\obj\Debug\net8.0\TourDataOrchestrator.Domain.AssemblyInfo.cs
+C:\Users\fasol\Documents\Projekt Biznesowy\Orchestrator\Szlakomat-data-aggregation-hub\src\TourDataOrchestrator.Domain\obj\Debug\net8.0\TourDataOrchestrator.Domain.csproj.CoreCompileInputs.cache
+C:\Users\fasol\Documents\Projekt Biznesowy\Orchestrator\Szlakomat-data-aggregation-hub\src\TourDataOrchestrator.Domain\obj\Debug\net8.0\TourDataOrchestrator.Domain.sourcelink.json
+C:\Users\fasol\Documents\Projekt Biznesowy\Orchestrator\Szlakomat-data-aggregation-hub\src\TourDataOrchestrator.Domain\obj\Debug\net8.0\TourDataOrchestrator.Domain.dll
+C:\Users\fasol\Documents\Projekt Biznesowy\Orchestrator\Szlakomat-data-aggregation-hub\src\TourDataOrchestrator.Domain\obj\Debug\net8.0\refint\TourDataOrchestrator.Domain.dll
+C:\Users\fasol\Documents\Projekt Biznesowy\Orchestrator\Szlakomat-data-aggregation-hub\src\TourDataOrchestrator.Domain\obj\Debug\net8.0\TourDataOrchestrator.Domain.pdb
+C:\Users\fasol\Documents\Projekt Biznesowy\Orchestrator\Szlakomat-data-aggregation-hub\src\TourDataOrchestrator.Domain\obj\Debug\net8.0\ref\TourDataOrchestrator.Domain.dll

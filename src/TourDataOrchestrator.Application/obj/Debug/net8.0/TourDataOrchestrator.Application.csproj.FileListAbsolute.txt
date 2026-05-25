@@ -1,0 +1,16 @@
+C:\Users\fasol\Documents\Projekt Biznesowy\Orchestrator\Szlakomat-data-aggregation-hub\src\TourDataOrchestrator.Application\bin\Debug\net8.0\TourDataOrchestrator.Application.deps.json
+C:\Users\fasol\Documents\Projekt Biznesowy\Orchestrator\Szlakomat-data-aggregation-hub\src\TourDataOrchestrator.Application\bin\Debug\net8.0\TourDataOrchestrator.Application.dll
+C:\Users\fasol\Documents\Projekt Biznesowy\Orchestrator\Szlakomat-data-aggregation-hub\src\TourDataOrchestrator.Application\bin\Debug\net8.0\TourDataOrchestrator.Application.pdb
+C:\Users\fasol\Documents\Projekt Biznesowy\Orchestrator\Szlakomat-data-aggregation-hub\src\TourDataOrchestrator.Application\bin\Debug\net8.0\TourDataOrchestrator.Domain.dll
+C:\Users\fasol\Documents\Projekt Biznesowy\Orchestrator\Szlakomat-data-aggregation-hub\src\TourDataOrchestrator.Application\bin\Debug\net8.0\TourDataOrchestrator.Domain.pdb
+C:\Users\fasol\Documents\Projekt Biznesowy\Orchestrator\Szlakomat-data-aggregation-hub\src\TourDataOrchestrator.Application\obj\Debug\net8.0\TourDataOrchestrator.Application.csproj.AssemblyReference.cache
+C:\Users\fasol\Documents\Projekt Biznesowy\Orchestrator\Szlakomat-data-aggregation-hub\src\TourDataOrchestrator.Application\obj\Debug\net8.0\TourDataOrchestrator.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fasol\Documents\Projekt Biznesowy\Orchestrator\Szlakomat-data-aggregation-hub\src\TourDataOrchestrator.Application\obj\Debug\net8.0\TourDataOrchestrator.Application.AssemblyInfoInputs.cache
+C:\Users\fasol\Documents\Projekt Biznesowy\Orchestrator\Szlakomat-data-aggregation-hub\src\TourDataOrchestrator.Application\obj\Debug\net8.0\TourDataOrchestrator.Application.AssemblyInfo.cs
+C:\Users\fasol\Documents\Projekt Biznesowy\Orchestrator\Szlakomat-data-aggregation-hub\src\TourDataOrchestrator.Application\obj\Debug\net8.0\TourDataOrchestrator.Application.csproj.CoreCompileInputs.cache
+C:\Users\fasol\Documents\Projekt Biznesowy\Orchestrator\Szlakomat-data-aggregation-hub\src\TourDataOrchestrator.Application\obj\Debug\net8.0\TourDataOrchestrator.Application.sourcelink.json
+C:\Users\fasol\Documents\Projekt Biznesowy\Orchestrator\Szlakomat-data-aggregation-hub\src\TourDataOrchestrator.Application\obj\Debug\net8.0\TourData.C116C239.Up2Date
+C:\Users\fasol\Documents\Projekt Biznesowy\Orchestrator\Szlakomat-data-aggregation-hub\src\TourDataOrchestrator.Application\obj\Debug\net8.0\TourDataOrchestrator.Application.dll
+C:\Users\fasol\Documents\Projekt Biznesowy\Orchestrator\Szlakomat-data-aggregation-hub\src\TourDataOrchestrator.Application\obj\Debug\net8.0\refint\TourDataOrchestrator.Application.dll
+C:\Users\fasol\Documents\Projekt Biznesowy\Orchestrator\Szlakomat-data-aggregation-hub\src\TourDataOrchestrator.Application\obj\Debug\net8.0\TourDataOrchestrator.Application.pdb
+C:\Users\fasol\Documents\Projekt Biznesowy\Orchestrator\Szlakomat-data-aggregation-hub\src\TourDataOrchestrator.Application\obj\Debug\net8.0\ref\TourDataOrchestrator.Application.dll

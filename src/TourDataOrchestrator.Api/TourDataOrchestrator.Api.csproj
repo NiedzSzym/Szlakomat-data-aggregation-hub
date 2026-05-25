@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.*" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TourDataOrchestrator.Application\TourDataOrchestrator.Application.csproj" />
+    <ProjectReference Include="..\TourDataOrchestrator.Messaging\TourDataOrchestrator.Messaging.csproj" />
+    <ProjectReference Include="..\TourDataOrchestrator.Storage\TourDataOrchestrator.Storage.csproj" />
+  </ItemGroup>
+</Project>

@@ -10,17 +10,21 @@ public sealed class MockWorkerOptions
     public string Password { get; init; } = "guest";
     public string VirtualHost { get; init; } = "/";
 
-    /// <summary>
-    /// Kolejka dedykowana temu workerowi. Każdy provider powinien mieć unikalną nazwę.
-    /// </summary>
     public string QueueName { get; init; } = "worker.mock";
 
     /// <summary>
     /// Routing Key pattern na Topic Exchange. "task.#" łapie wszystkie zadania —
-    /// produkcyjny worker użyłby wzorca specyficznego dla swojego zasobu,
-    /// np. "task.*.attraction_wawel".
+    /// produkcyjny worker używa wzorca specyficznego dla swojej operacji,
+    /// np. "task.pricing.#" lub "task.events.attraction_wawel".
     /// </summary>
     public string BindingKey { get; init; } = "task.#";
 
     public string TaskExchangeName { get; init; } = "orchestrator.tasks";
+
+    public string ProviderId { get; init; } = "mock-worker";
+
+    public IReadOnlyList<string> SupportedTargets { get; init; } =
+        ["attraction_wawel", "attraction_wieliczka", "attraction_auschwitz", "transport_mpk"];
+
+    public string Description { get; init; } = "Mock data provider — obsługuje wszystkie operacje i targety (task.#)";
 }

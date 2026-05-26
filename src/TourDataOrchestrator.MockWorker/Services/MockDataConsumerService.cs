@@ -5,28 +5,29 @@ using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
 using RabbitMQ.Client.Exceptions;
 using System.Text.Json;
+using TourDataOrchestrator.Application.Abstractions;
 using TourDataOrchestrator.Application.DTOs;
 using TourDataOrchestrator.MockWorker.Configuration;
 
 namespace TourDataOrchestrator.MockWorker.Services;
 
-/// <summary>
-/// Mock implementacja workera danych. Demonstruje wzorzec podpinania providerów:
-/// każdy worker deklaruje własną kolejkę i binduje ją do wspólnego Exchange
-/// z Routing Key specyficznym dla obsługiwanego zasobu.
-/// </summary>
 public sealed class MockDataConsumerService : BackgroundService
 {
-    private static readonly TimeSpan RetryDelay = TimeSpan.FromSeconds(5);
+    private static readonly TimeSpan RetryDelay       = TimeSpan.FromSeconds(5);
+    private static readonly TimeSpan HeartbeatInterval = TimeSpan.FromSeconds(30);
+    private static readonly TimeSpan RegistrationTtl  = TimeSpan.FromSeconds(90);
 
     private readonly MockWorkerOptions _options;
+    private readonly IProviderRegistry _registry;
     private readonly ILogger<MockDataConsumerService> _logger;
 
     public MockDataConsumerService(
         IOptions<MockWorkerOptions> options,
+        IProviderRegistry registry,
         ILogger<MockDataConsumerService> logger)
     {
         _options = options.Value;
+        _registry = registry;
         _logger = logger;
     }
 
@@ -114,11 +115,25 @@ public sealed class MockDataConsumerService : BackgroundService
             consumer: consumer,
             cancellationToken: stoppingToken);
 
+        await _registry.RegisterAsync(
+            new ProviderRegistration(
+                ProviderId: _options.ProviderId,
+                Operation: "*",
+                BindingKey: _options.BindingKey,
+                SupportedTargets: _options.SupportedTargets,
+                Description: _options.Description),
+            ttl: RegistrationTtl,
+            stoppingToken);
+
         _logger.LogInformation(
             "MockWorker gotowy. Kolejka: '{Queue}', Binding: '{Key}' → Exchange: '{Exchange}'",
             _options.QueueName, _options.BindingKey, _options.TaskExchangeName);
 
-        await Task.Delay(Timeout.Infinite, stoppingToken).ConfigureAwait(ConfigureAwaitOptions.SuppressThrowing);
+        // Heartbeat odświeża TTL rejestracji w Redis co 30s.
+        // PeriodicTimer zwraca false gdy stoppingToken zostanie anulowany — pętla kończy się czysto.
+        using var timer = new PeriodicTimer(HeartbeatInterval);
+        while (await timer.WaitForNextTickAsync(stoppingToken))
+            await _registry.RefreshHeartbeatAsync(_options.ProviderId, RegistrationTtl, stoppingToken);
     }
 
     private async Task OnTaskReceivedAsync(IChannel channel, BasicDeliverEventArgs ea)
@@ -136,8 +151,8 @@ public sealed class MockDataConsumerService : BackgroundService
             }
 
             _logger.LogInformation(
-                "Otrzymano zadanie {TaskId} | Target: {Target} | Intent: {Intent}",
-                task.TaskId, task.Target, task.Intent);
+                "Otrzymano zadanie {TaskId} | Target: {Target} | Operacja: {Operation}",
+                task.TaskId, task.Target, task.Operation);
 
             var replyTo = ea.BasicProperties.ReplyTo ?? task.ReplyToQueue;
 
@@ -184,7 +199,7 @@ public sealed class MockDataConsumerService : BackgroundService
     {
         source = "mock_worker_dotnet",
         target = task.Target,
-        intent = task.Intent,
+        operation = task.Operation,
         name = $"Mock: {task.Target}",
         price_adult_pln = 35,
         price_child_pln = 20,

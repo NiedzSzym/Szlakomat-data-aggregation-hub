@@ -1,12 +1,11 @@
 using System.Text.Json.Serialization;
-using TourDataOrchestrator.Domain.Enums;
 
 namespace TourDataOrchestrator.Application.DTOs;
 
 public sealed record OrchestratorRequest(
-    [property: JsonPropertyName("intent")]   TaskIntent Intent,
-    [property: JsonPropertyName("targets")]  IReadOnlyList<string> Targets,
-    [property: JsonPropertyName("parameters")] RequestParameters Parameters
+    [property: JsonPropertyName("operation")]    string Operation,
+    [property: JsonPropertyName("targets")]      IReadOnlyList<string> Targets,
+    [property: JsonPropertyName("parameters")]   RequestParameters Parameters
 );
 
 public sealed record RequestParameters(

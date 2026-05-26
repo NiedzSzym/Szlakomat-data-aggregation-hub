@@ -1,0 +1,55 @@
+{
+  "attractions": [
+    {
+      "attraction_id": "attraction_wawel",
+      "attraction_name": "Zamek Królewski na Wawelu",
+      "currency": "PLN",
+      "ticket_types": [
+        { "type": "adult",       "label": "Bilet normalny",                             "price": 35.00 },
+        { "type": "child",       "label": "Bilet ulgowy (do 16 lat)",                   "price": 20.00 },
+        { "type": "student",     "label": "Bilet studencki",                            "price": 25.00 },
+        { "type": "group_adult", "label": "Bilet grupowy — dorosły (min. 10 os.)",      "price": 28.00 },
+        { "type": "group_child", "label": "Bilet grupowy — ulgowy (min. 10 os.)",       "price": 16.00 }
+      ],
+      "notes": "Bezpłatny wstęp w niedzielę na wystawę stałą Komnaty Królewskie."
+    },
+    {
+      "attraction_id": "attraction_wieliczka",
+      "attraction_name": "Kopalnia Soli Wieliczka",
+      "currency": "PLN",
+      "ticket_types": [
+        { "type": "adult",         "label": "Bilet normalny — Trasa Turystyczna",         "price": 109.00 },
+        { "type": "child",         "label": "Bilet ulgowy (7–16 lat)",                    "price": 79.00  },
+        { "type": "child_under_7", "label": "Dzieci do lat 7",                            "price": 0.00   },
+        { "type": "student",       "label": "Bilet studencki",                            "price": 89.00  },
+        { "type": "group_adult",   "label": "Bilet grupowy — dorosły (min. 10 os.)",      "price": 95.00  }
+      ],
+      "notes": "Ceny dotyczą Trasy Turystycznej. Trasa Górnicza posiada odrębny cennik."
+    },
+    {
+      "attraction_id": "attraction_auschwitz",
+      "attraction_name": "Muzeum Auschwitz-Birkenau",
+      "currency": "PLN",
+      "ticket_types": [
+        { "type": "individual",    "label": "Zwiedzanie indywidualne",                         "price": 0.00  },
+        { "type": "guided_adult",  "label": "Zwiedzanie z przewodnikiem — dorosły",            "price": 80.00 },
+        { "type": "guided_child",  "label": "Zwiedzanie z przewodnikiem — ulgowy",             "price": 65.00 },
+        { "type": "guided_group",  "label": "Zwiedzanie z przewodnikiem — grupowe (min. 10 os.)", "price": 65.00 }
+      ],
+      "notes": "Zwiedzanie indywidualne jest bezpłatne. Opłata dotyczy wyłącznie usług przewodnika."
+    },
+    {
+      "attraction_id": "transport_mpk",
+      "attraction_name": "Komunikacja Miejska Kraków (MPK)",
+      "currency": "PLN",
+      "ticket_types": [
+        { "type": "single",   "label": "Bilet jednorazowy",          "price": 6.00   },
+        { "type": "24h",      "label": "Bilet 24-godzinny",          "price": 24.00  },
+        { "type": "48h",      "label": "Bilet 48-godzinny",          "price": 36.00  },
+        { "type": "72h",      "label": "Bilet 72-godzinny",          "price": 48.00  },
+        { "type": "monthly",  "label": "Bilet miesięczny — normalny","price": 165.00 }
+      ],
+      "notes": "Dzieci do lat 4 i osoby po 70. roku życia jeżdżą bezpłatnie."
+    }
+  ]
+}

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TourDataOrchestrator.MockWorker")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ffec4472f22859362c5a8411467d78cf3b6dbfe1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eb57ca213ecc1148212e137460c8fa66cfd6b39b")]
 [assembly: System.Reflection.AssemblyProductAttribute("TourDataOrchestrator.MockWorker")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TourDataOrchestrator.MockWorker")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

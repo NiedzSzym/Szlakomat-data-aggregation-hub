@@ -29,6 +29,7 @@ public static class StorageServiceExtensions
 
         services.AddSingleton<ITaskStateStore, RedisTaskStateStore>();
         services.AddSingleton<IScrapingResultAggregator, RedisScrapingResultAggregator>();
+        services.AddSingleton<IProviderRegistry, RedisProviderRegistry>();
 
         return services;
     }

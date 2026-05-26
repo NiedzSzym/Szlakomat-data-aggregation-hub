@@ -1,0 +1,84 @@
+{
+  "attractions": [
+    {
+      "attraction_id": "attraction_wawel",
+      "attraction_name": "Zamek Królewski na Wawelu",
+      "events": [
+        {
+          "event_id": "wawel_royal_chambers",
+          "name": "Komnaty Królewskie",
+          "slots": ["09:00", "10:00", "11:00", "12:00", "13:00", "14:00", "15:00", "16:00"],
+          "capacity_per_slot": 25,
+          "duration_minutes": 60
+        },
+        {
+          "event_id": "wawel_dragon_den",
+          "name": "Smocza Jama",
+          "slots": ["10:00", "12:00", "14:00", "16:00"],
+          "capacity_per_slot": 30,
+          "duration_minutes": 30
+        },
+        {
+          "event_id": "wawel_royal_treasury",
+          "name": "Skarbiec Koronny i Zbrojownia",
+          "slots": ["09:30", "11:30", "13:30", "15:30"],
+          "capacity_per_slot": 20,
+          "duration_minutes": 75
+        }
+      ]
+    },
+    {
+      "attraction_id": "attraction_wieliczka",
+      "attraction_name": "Kopalnia Soli Wieliczka",
+      "events": [
+        {
+          "event_id": "wieliczka_tourist_route",
+          "name": "Trasa Turystyczna",
+          "slots": ["08:30", "10:00", "11:30", "13:00", "14:30", "16:00"],
+          "capacity_per_slot": 35,
+          "duration_minutes": 120
+        },
+        {
+          "event_id": "wieliczka_miners_route",
+          "name": "Trasa Górnicza",
+          "slots": ["09:00", "13:00"],
+          "capacity_per_slot": 20,
+          "duration_minutes": 180
+        }
+      ]
+    },
+    {
+      "attraction_id": "attraction_auschwitz",
+      "attraction_name": "Muzeum Auschwitz-Birkenau",
+      "events": [
+        {
+          "event_id": "auschwitz_guided_tour",
+          "name": "Zwiedzanie z Przewodnikiem",
+          "slots": ["08:00", "09:00", "10:00", "11:00", "12:00", "13:00", "14:00"],
+          "capacity_per_slot": 30,
+          "duration_minutes": 210
+        },
+        {
+          "event_id": "auschwitz_individual",
+          "name": "Zwiedzanie Indywidualne",
+          "slots": ["08:00", "09:00", "10:00", "11:00", "12:00", "13:00", "14:00", "15:00"],
+          "capacity_per_slot": 100,
+          "duration_minutes": 90
+        }
+      ]
+    },
+    {
+      "attraction_id": "transport_mpk",
+      "attraction_name": "Komunikacja Miejska Kraków (MPK)",
+      "events": [
+        {
+          "event_id": "mpk_daily_pass",
+          "name": "Bilet Dzienny",
+          "slots": ["00:00"],
+          "capacity_per_slot": 9999,
+          "duration_minutes": 1440
+        }
+      ]
+    }
+  ]
+}

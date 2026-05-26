@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "BwCVg2n8DlA=",
+  "dgSpecHash": "kXp9kKYLiks=",
   "success": true,
   "projectFilePath": "C:\\Users\\fasol\\Documents\\Projekt Biznesowy\\Orchestrator\\Szlakomat-data-aggregation-hub\\src\\TourDataOrchestrator.MockWorker\\TourDataOrchestrator.MockWorker.csproj",
   "expectedPackageFiles": [
@@ -22,7 +22,7 @@
     "C:\\Users\\fasol\\.nuget\\packages\\microsoft.extensions.hosting\\8.0.1\\microsoft.extensions.hosting.8.0.1.nupkg.sha512",
     "C:\\Users\\fasol\\.nuget\\packages\\microsoft.extensions.hosting.abstractions\\8.0.1\\microsoft.extensions.hosting.abstractions.8.0.1.nupkg.sha512",
     "C:\\Users\\fasol\\.nuget\\packages\\microsoft.extensions.logging\\8.0.1\\microsoft.extensions.logging.8.0.1.nupkg.sha512",
-    "C:\\Users\\fasol\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.2\\microsoft.extensions.logging.abstractions.8.0.2.nupkg.sha512",
+    "C:\\Users\\fasol\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.3\\microsoft.extensions.logging.abstractions.8.0.3.nupkg.sha512",
     "C:\\Users\\fasol\\.nuget\\packages\\microsoft.extensions.logging.configuration\\8.0.1\\microsoft.extensions.logging.configuration.8.0.1.nupkg.sha512",
     "C:\\Users\\fasol\\.nuget\\packages\\microsoft.extensions.logging.console\\8.0.1\\microsoft.extensions.logging.console.8.0.1.nupkg.sha512",
     "C:\\Users\\fasol\\.nuget\\packages\\microsoft.extensions.logging.debug\\8.0.1\\microsoft.extensions.logging.debug.8.0.1.nupkg.sha512",
@@ -31,8 +31,11 @@
     "C:\\Users\\fasol\\.nuget\\packages\\microsoft.extensions.options\\8.0.2\\microsoft.extensions.options.8.0.2.nupkg.sha512",
     "C:\\Users\\fasol\\.nuget\\packages\\microsoft.extensions.options.configurationextensions\\8.0.0\\microsoft.extensions.options.configurationextensions.8.0.0.nupkg.sha512",
     "C:\\Users\\fasol\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
+    "C:\\Users\\fasol\\.nuget\\packages\\pipelines.sockets.unofficial\\2.2.16\\pipelines.sockets.unofficial.2.2.16.nupkg.sha512",
     "C:\\Users\\fasol\\.nuget\\packages\\rabbitmq.client\\7.2.1\\rabbitmq.client.7.2.1.nupkg.sha512",
+    "C:\\Users\\fasol\\.nuget\\packages\\stackexchange.redis\\2.13.10\\stackexchange.redis.2.13.10.nupkg.sha512",
     "C:\\Users\\fasol\\.nuget\\packages\\system.diagnostics.eventlog\\8.0.1\\system.diagnostics.eventlog.8.0.1.nupkg.sha512",
+    "C:\\Users\\fasol\\.nuget\\packages\\system.io.hashing\\10.0.2\\system.io.hashing.10.0.2.nupkg.sha512",
     "C:\\Users\\fasol\\.nuget\\packages\\system.io.pipelines\\8.0.0\\system.io.pipelines.8.0.0.nupkg.sha512",
     "C:\\Users\\fasol\\.nuget\\packages\\system.threading.ratelimiting\\8.0.0\\system.threading.ratelimiting.8.0.0.nupkg.sha512",
     "C:\\Users\\fasol\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.25\\microsoft.netcore.app.ref.8.0.25.nupkg.sha512",

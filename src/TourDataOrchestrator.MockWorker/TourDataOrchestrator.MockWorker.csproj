@@ -11,5 +11,6 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TourDataOrchestrator.Application\TourDataOrchestrator.Application.csproj" />
+    <ProjectReference Include="..\TourDataOrchestrator.Storage\TourDataOrchestrator.Storage.csproj" />
   </ItemGroup>
 </Project>

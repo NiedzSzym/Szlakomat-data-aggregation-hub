@@ -29,6 +29,7 @@ public sealed class OrchestratorController : ControllerBase
     /// <summary>
     /// Scatter leg: rozsyła zadania do workerów. Zawsze zwraca HTTP 202 z task_id.
     /// Klient powinien pollować GET /{taskId} aż status != Processing.
+    /// Routing key: task.{operation}.{target} — np. task.pricing.attraction_wawel
     /// </summary>
     [HttpPost("dispatch")]
     [ProducesResponseType(typeof(OrchestratorResponse), StatusCodes.Status202Accepted)]
@@ -46,20 +47,22 @@ public sealed class OrchestratorController : ControllerBase
 
         foreach (var target in request.Targets)
         {
-            var routingKey = BuildRoutingKey(target, request.Intent);
             var workerMessage = new WorkerTaskMessage(
                 TaskId: taskId,
                 Target: target,
-                Intent: request.Intent.ToString(),
+                Operation: request.Operation,
                 Parameters: request.Parameters,
                 ReplyToQueue: "orchestrator.results");
 
-            await _publisher.PublishAsync(workerMessage, routingKey, cancellationToken);
+            await _publisher.PublishAsync(
+                workerMessage,
+                routingKey: $"task.{request.Operation}.{target}",
+                cancellationToken);
         }
 
         _logger.LogInformation(
-            "Rozesłano zadanie {TaskId} do {Count} workerów. Intent: {Intent}",
-            taskId, request.Targets.Count, request.Intent);
+            "Rozesłano zadanie {TaskId} do {Count} workerów. Operacja: {Operation}",
+            taskId, request.Targets.Count, request.Operation);
 
         return Accepted(new OrchestratorResponse(taskId, OrchestratorTaskStatus.Processing));
     }
@@ -82,17 +85,5 @@ public sealed class OrchestratorController : ControllerBase
         return result.Status == OrchestratorTaskStatus.Processing
             ? Accepted(result)
             : Ok(result);
-    }
-
-    private static string BuildRoutingKey(string target, TaskIntent intent)
-    {
-        var segment = intent switch
-        {
-            TaskIntent.Pricing                => "pricing",
-            TaskIntent.Availability           => "availability",
-            TaskIntent.AvailabilityAndPricing => "full",
-            _                                 => "unknown"
-        };
-        return $"task.{segment}.{target}";
     }
 }
